@@ -1,14 +1,14 @@
 import 'package:bazi/Service/minpan.dart';
 
 class Bazi {
-  Bazi({required this.birthDay});
-  final DateTime birthDay;
+  Bazi({required this.birthday});
+  final DateTime birthday;
 
   //基本
 
   //命盤
   MinPan getMinPan() {
-    return MinPan(birthDay: birthDay);
+    return MinPan(birthday: birthday);
   }
   //細盤
 
