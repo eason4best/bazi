@@ -11,23 +11,28 @@ enum TianGan {
   gui;
 
   @override
-  String toString() => this == TianGan.jia
-      ? '甲'
-      : this == TianGan.yi
-          ? '乙'
-          : this == TianGan.bing
-              ? '丙'
-              : this == TianGan.ding
-                  ? '丁'
-                  : this == TianGan.wu
-                      ? '戊'
-                      : this == TianGan.ji
-                          ? '己'
-                          : this == TianGan.geng
-                              ? '庚'
-                              : this == TianGan.xin
-                                  ? '辛'
-                                  : this == TianGan.ren
-                                      ? '壬'
-                                      : '癸';
+  String toString() {
+    switch (this) {
+      case TianGan.jia:
+        return '甲';
+      case TianGan.yi:
+        return '乙';
+      case TianGan.bing:
+        return '丙';
+      case TianGan.ding:
+        return '丁';
+      case TianGan.wu:
+        return '戊';
+      case TianGan.ji:
+        return '己';
+      case TianGan.geng:
+        return '庚';
+      case TianGan.xin:
+        return '辛';
+      case TianGan.ren:
+        return '壬';
+      case TianGan.gui:
+        return '癸';
+    }
+  }
 }

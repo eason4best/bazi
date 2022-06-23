@@ -6,13 +6,18 @@ enum Results {
   liunian;
 
   @override
-  String toString() => this == Results.basic
-      ? '基本'
-      : this == Results.minpan
-          ? '命盤'
-          : this == Results.xipan
-              ? '細盤'
-              : this == Results.dayun
-                  ? '大運'
-                  : '流年';
+  String toString() {
+    switch (this) {
+      case Results.basic:
+        return '基本';
+      case Results.minpan:
+        return '命盤';
+      case Results.xipan:
+        return '細盤';
+      case Results.dayun:
+        return '大運';
+      case Results.liunian:
+        return '流年';
+    }
+  }
 }

@@ -1,4 +1,4 @@
-enum ZhuXing {
+enum ShiShen {
   zhengcai,
   piancai,
   zhengguan,
@@ -11,23 +11,28 @@ enum ZhuXing {
   shangguan;
 
   @override
-  String toString() => this == ZhuXing.zhengcai
-      ? '正財'
-      : this == ZhuXing.piancai
-          ? '偏財'
-          : this == ZhuXing.zhengguan
-              ? '正官'
-              : this == ZhuXing.pianguan
-                  ? '偏官'
-                  : this == ZhuXing.zhengyin
-                      ? '正印'
-                      : this == ZhuXing.pianyin
-                          ? '偏印'
-                          : this == ZhuXing.bijian
-                              ? '比肩'
-                              : this == ZhuXing.jiecai
-                                  ? '劫財'
-                                  : this == ZhuXing.shishen
-                                      ? '食神'
-                                      : '傷官';
+  String toString() {
+    switch (this) {
+      case ShiShen.zhengcai:
+        return '正財';
+      case ShiShen.piancai:
+        return '偏財';
+      case ShiShen.zhengguan:
+        return '正官';
+      case ShiShen.pianguan:
+        return '偏官';
+      case ShiShen.zhengyin:
+        return '正印';
+      case ShiShen.pianyin:
+        return '偏印';
+      case ShiShen.bijian:
+        return '比肩';
+      case ShiShen.jiecai:
+        return '劫財';
+      case ShiShen.shishen:
+        return '食神';
+      case ShiShen.shangguan:
+        return '傷官';
+    }
+  }
 }
