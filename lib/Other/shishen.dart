@@ -35,4 +35,31 @@ enum ShiShen {
         return '傷官';
     }
   }
+
+  factory ShiShen.toShiShen(String value) {
+    switch (value) {
+      case '正财':
+        return ShiShen.zhengcai;
+      case '偏财':
+        return ShiShen.piancai;
+      case '正官':
+        return ShiShen.zhengguan;
+      case '七杀':
+        return ShiShen.pianguan;
+      case '正印':
+        return ShiShen.zhengyin;
+      case '偏印':
+        return ShiShen.pianyin;
+      case '比肩':
+        return ShiShen.bijian;
+      case '劫财':
+        return ShiShen.jiecai;
+      case '食神':
+        return ShiShen.shishen;
+      case '伤官':
+        return ShiShen.shangguan;
+      default:
+        return ShiShen.zhengcai;
+    }
+  }
 }

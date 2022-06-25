@@ -35,4 +35,31 @@ enum TianGan {
         return '癸';
     }
   }
+
+  factory TianGan.toTianGan(String value) {
+    switch (value) {
+      case '甲':
+        return TianGan.jia;
+      case '乙':
+        return TianGan.yi;
+      case '丙':
+        return TianGan.bing;
+      case '丁':
+        return TianGan.ding;
+      case '戊':
+        return TianGan.wu;
+      case '己':
+        return TianGan.ji;
+      case '庚':
+        return TianGan.geng;
+      case '辛':
+        return TianGan.xin;
+      case '壬':
+        return TianGan.ren;
+      case '癸':
+        return TianGan.gui;
+      default:
+        return TianGan.jia;
+    }
+  }
 }

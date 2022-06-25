@@ -95,4 +95,71 @@ enum NaYin {
         return '大海水';
     }
   }
+
+  factory NaYin.toNaYin(String value) {
+    switch (value) {
+      case '海中金':
+        return NaYin.haizhongjin;
+      case '炉中火':
+        return NaYin.luzhonghuo;
+      case '大林木':
+        return NaYin.dalinmu;
+      case '路旁土':
+        return NaYin.lupangtu;
+      case '剑锋金':
+        return NaYin.jianfengjin;
+      case '山头火':
+        return NaYin.shantouhuo;
+      case '涧下水':
+        return NaYin.jianxiashui;
+      case '城头土':
+        return NaYin.chengtoutu;
+      case '白蜡金':
+        return NaYin.bailajin;
+      case '杨柳木':
+        return NaYin.yangliumu;
+      case '泉中水':
+        return NaYin.jingquanshui;
+      case '屋上土':
+        return NaYin.wushangtu;
+      case '霹雳火':
+        return NaYin.pilihuo;
+      case '松柏木':
+        return NaYin.songbaimu;
+      case '长流水':
+        return NaYin.zhangliushui;
+      case '沙中金':
+        return NaYin.shazhongjin;
+      case '山下火':
+        return NaYin.shanxiahuo;
+      case '平地木':
+        return NaYin.pingdimu;
+      case '壁上土':
+        return NaYin.bishangtu;
+      case '金箔金':
+        return NaYin.jinbojin;
+      case '覆灯火':
+        return NaYin.fudenghuo;
+      case '天河水':
+        return NaYin.tianheshui;
+      case '大驿土':
+        return NaYin.dayitu;
+      case '钗钏金':
+        return NaYin.chaichuanjin;
+      case '桑柘木':
+        return NaYin.sangzhemu;
+      case '大溪水':
+        return NaYin.daxishui;
+      case '沙中土':
+        return NaYin.shazhongtu;
+      case '天上火':
+        return NaYin.tianshanghuo;
+      case '石榴木':
+        return NaYin.shiliumu;
+      case '大海水':
+        return NaYin.dahaishui;
+      default:
+        return NaYin.haizhongjin;
+    }
+  }
 }

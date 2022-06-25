@@ -2,7 +2,7 @@ import '../Other/dizhi.dart';
 import '../Other/tiangan.dart';
 
 class TianGanDiZhi {
-  TianGanDiZhi({required this.tianGan, required this.dizhi});
+  TianGanDiZhi({required this.tianGan, required this.diZhi});
   final TianGan tianGan;
-  final Dizhi dizhi;
+  final DiZhi diZhi;
 }

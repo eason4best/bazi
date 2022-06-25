@@ -1,4 +1,4 @@
-enum Dizhi {
+enum DiZhi {
   zi,
   chou,
   yin,
@@ -15,30 +15,61 @@ enum Dizhi {
   @override
   String toString() {
     switch (this) {
-      case Dizhi.zi:
+      case DiZhi.zi:
         return '子';
-      case Dizhi.chou:
+      case DiZhi.chou:
         return '丑';
-      case Dizhi.yin:
+      case DiZhi.yin:
         return '寅';
-      case Dizhi.mao:
+      case DiZhi.mao:
         return '卯';
-      case Dizhi.chen:
+      case DiZhi.chen:
         return '辰';
-      case Dizhi.si:
+      case DiZhi.si:
         return '巳';
-      case Dizhi.wu:
+      case DiZhi.wu:
         return '午';
-      case Dizhi.wei:
+      case DiZhi.wei:
         return '未';
-      case Dizhi.shen:
+      case DiZhi.shen:
         return '申';
-      case Dizhi.you:
+      case DiZhi.you:
         return '酉';
-      case Dizhi.xu:
+      case DiZhi.xu:
         return '戌';
-      case Dizhi.hai:
+      case DiZhi.hai:
         return '亥';
+    }
+  }
+
+  factory DiZhi.toDiZhi(String value) {
+    switch (value) {
+      case '子':
+        return DiZhi.zi;
+      case '丑':
+        return DiZhi.chou;
+      case '寅':
+        return DiZhi.yin;
+      case '卯':
+        return DiZhi.mao;
+      case '辰':
+        return DiZhi.chen;
+      case '巳':
+        return DiZhi.si;
+      case '午':
+        return DiZhi.wu;
+      case '未':
+        return DiZhi.wei;
+      case '申':
+        return DiZhi.shen;
+      case '酉':
+        return DiZhi.you;
+      case '戌':
+        return DiZhi.xu;
+      case '亥':
+        return DiZhi.hai;
+      default:
+        return DiZhi.zi;
     }
   }
 }
