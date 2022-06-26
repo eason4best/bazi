@@ -8,7 +8,7 @@ class Bazi {
 
   //命盤
   MinPan getMinPan() {
-    return MinPan(birthday: birthday);
+    return MinPan(birthDay: birthday);
   }
   //細盤
 

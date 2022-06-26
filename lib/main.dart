@@ -12,9 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '八字排盤',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xff448aff),
+          centerTitle: false,
+          elevation: 0.0,
+        ),
+        primaryColor: const Color(0xff448aff),
+        scaffoldBackgroundColor: Colors.blue.shade50,
       ),
-      home: const ResultScreen(),
+      home: ResultScreen(birthDay: DateTime(1998, 10, 19, 21)),
     );
   }
 }

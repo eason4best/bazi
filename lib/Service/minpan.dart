@@ -8,8 +8,8 @@ import '../Model/tiangandizhi.dart';
 import '../Other/dizhi.dart';
 
 class MinPan {
-  MinPan({required this.birthday}) {
-    lunarBirthday = Lunar.fromDate(birthday);
+  MinPan({required this.birthDay}) {
+    lunarBirthday = Lunar.fromDate(birthDay);
     zhuXing = YMDHZhuXing(lunarBirthday: lunarBirthday);
     ganZhi = YMDHGanZhi(lunarBirthday: lunarBirthday);
     cangGan = YMHDCangGan(lunarBirthday: lunarBirthday);
@@ -17,7 +17,8 @@ class MinPan {
     naYin = YMDHNaYin(lunarBirthday: lunarBirthday);
     xingYun = YMHDXingYun(lunarBirthday: lunarBirthday);
   }
-  final DateTime birthday;
+  //西曆生日
+  final DateTime birthDay;
   //農曆生日
   late Lunar lunarBirthday;
   //主星
