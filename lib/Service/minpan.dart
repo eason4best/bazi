@@ -1,11 +1,11 @@
-import 'package:bazi/Other/nayin.dart';
-import 'package:bazi/Other/tiangan.dart';
-import 'package:bazi/Other/zhangsheng.dart';
-import 'package:bazi/Other/shishen.dart';
+import 'package:bazi/Enum/nayin.dart';
+import 'package:bazi/Enum/tiangan.dart';
+import 'package:bazi/Enum/zhangsheng.dart';
+import 'package:bazi/Enum/shishen.dart';
 import 'package:lunar/lunar.dart';
 
 import '../Model/tiangandizhi.dart';
-import '../Other/dizhi.dart';
+import '../Enum/dizhi.dart';
 
 class MinPan {
   MinPan({required this.birthDay}) {

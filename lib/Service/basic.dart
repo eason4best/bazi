@@ -1,6 +1,6 @@
-import 'package:bazi/Other/jieqi.dart' as jq;
-import 'package:bazi/Other/star_sign.dart';
-import 'package:bazi/Other/zodiac.dart';
+import 'package:bazi/Enum/jieqi.dart' as jq;
+import 'package:bazi/Enum/star_sign.dart';
+import 'package:bazi/Enum/zodiac.dart';
 import 'package:lunar/lunar.dart';
 
 class Basic {

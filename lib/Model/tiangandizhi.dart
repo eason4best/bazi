@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../Other/dizhi.dart';
-import '../Other/tiangan.dart';
+import '../Enum/dizhi.dart';
+import '../Enum/tiangan.dart';
 
 class TianGanDiZhi {
   TianGanDiZhi({required this.tianGan, required this.diZhi});

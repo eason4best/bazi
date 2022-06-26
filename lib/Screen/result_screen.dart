@@ -1,4 +1,4 @@
-import 'package:bazi/Other/results.dart';
+import 'package:bazi/Enum/results.dart';
 import 'package:bazi/Screen/minpan_tab.dart';
 import 'package:bazi/Service/minpan.dart';
 import 'package:flutter/material.dart';

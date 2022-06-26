@@ -1,5 +1,5 @@
 import 'package:bazi/Model/tiangandizhi.dart';
-import 'package:bazi/Other/table_card_type.dart';
+import 'package:bazi/Enum/table_card_type.dart';
 import 'package:flutter/material.dart';
 
 class TableCard extends StatelessWidget {
