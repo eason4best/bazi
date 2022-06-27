@@ -135,11 +135,20 @@ class MinPanTab extends StatelessWidget {
                 ),
                 Expanded(
                   child: TableCard(
-                    data: const [
-                      ['正財', '正財', '劫財', '正官'],
-                      ['正官', '正官', '食神', '正印'],
-                      ['', '', '偏印', '劫財'],
-                    ],
+                    data: HelperFunction.transformColumnsToRows([
+                      minPan.fuXing.hourFuXing
+                          .map((fx) => fx.toString())
+                          .toList(),
+                      minPan.fuXing.dayFuXing
+                          .map((fx) => fx.toString())
+                          .toList(),
+                      minPan.fuXing.monthFuXing
+                          .map((fx) => fx.toString())
+                          .toList(),
+                      minPan.fuXing.yearFuXing
+                          .map((fx) => fx.toString())
+                          .toList(),
+                    ]),
                     type: TableCardType.miniData,
                     height: TableCardType.miniData.getHeight() * 3 + 8,
                     margin: const EdgeInsets.only(left: 8.0, top: 8.0),
