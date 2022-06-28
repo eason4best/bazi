@@ -1,5 +1,5 @@
 import 'package:bazi/Enum/results.dart';
-import 'package:bazi/Screen/minpan_tab.dart';
+import 'package:bazi/Screen/minpan_screen.dart';
 import 'package:bazi/Service/minpan.dart';
 import 'package:flutter/material.dart';
 
@@ -36,12 +36,12 @@ class _ResultScreenState extends State<ResultScreen>
             controller: _tabController,
             indicator: const UnderlineTabIndicator(),
             tabs: Results.values
-                .map((result) => Text(result.toString()))
+                .map((result) => Tab(text: result.toString()))
                 .toList()),
       ),
       body: TabBarView(controller: _tabController, children: [
         Container(),
-        MinPanTab(minPan: minPan),
+        MinPanScreen(minPan: minPan),
         Container(),
         Container(),
         Container(),

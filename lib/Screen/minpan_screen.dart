@@ -4,8 +4,8 @@ import 'package:bazi/Service/minpan.dart';
 import 'package:bazi/Widget/table_card.dart';
 import 'package:flutter/material.dart';
 
-class MinPanTab extends StatelessWidget {
-  const MinPanTab({
+class MinPanScreen extends StatelessWidget {
+  const MinPanScreen({
     Key? key,
     required this.minPan,
   }) : super(key: key);
