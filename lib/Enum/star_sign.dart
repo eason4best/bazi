@@ -41,4 +41,35 @@ enum StarSign {
         return '雙魚座';
     }
   }
+
+  factory StarSign.toStarSign(String value) {
+    switch (value) {
+      case '白羊':
+        return StarSign.aries;
+      case '金牛':
+        return StarSign.taurus;
+      case '双子':
+        return StarSign.gemini;
+      case '巨蟹':
+        return StarSign.cancer;
+      case '狮子':
+        return StarSign.leo;
+      case '处女':
+        return StarSign.virgo;
+      case '天秤':
+        return StarSign.lebra;
+      case '天蝎':
+        return StarSign.scorpio;
+      case '射手':
+        return StarSign.sagittarius;
+      case '摩羯':
+        return StarSign.capricorn;
+      case '水瓶':
+        return StarSign.aquarius;
+      case '双鱼':
+        return StarSign.pisces;
+      default:
+        return StarSign.aries;
+    }
+  }
 }

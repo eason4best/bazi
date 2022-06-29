@@ -41,4 +41,35 @@ enum Zodiac {
         return '豬';
     }
   }
+
+  factory Zodiac.toZodiac(String value) {
+    switch (value) {
+      case '鼠':
+        return Zodiac.mouse;
+      case '牛':
+        return Zodiac.bull;
+      case '虎':
+        return Zodiac.tiger;
+      case '兔':
+        return Zodiac.rabbit;
+      case '龙':
+        return Zodiac.dragon;
+      case '蛇':
+        return Zodiac.snake;
+      case '马':
+        return Zodiac.horse;
+      case '羊':
+        return Zodiac.goat;
+      case '猴':
+        return Zodiac.monkey;
+      case '鸡':
+        return Zodiac.chicken;
+      case '狗':
+        return Zodiac.dog;
+      case '猪':
+        return Zodiac.pig;
+      default:
+        return Zodiac.mouse;
+    }
+  }
 }

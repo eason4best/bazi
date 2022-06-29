@@ -1,5 +1,7 @@
 import 'package:bazi/Enum/results.dart';
+import 'package:bazi/Screen/basic_screen.dart';
 import 'package:bazi/Screen/minpan_screen.dart';
+import 'package:bazi/Service/basic.dart';
 import 'package:bazi/Service/minpan.dart';
 import 'package:flutter/material.dart';
 
@@ -17,12 +19,14 @@ class ResultScreen extends StatefulWidget {
 class _ResultScreenState extends State<ResultScreen>
     with TickerProviderStateMixin {
   late TabController _tabController;
+  late Basic basic;
   late MinPan minPan;
 
   @override
   void initState() {
     _tabController = TabController(
         length: Results.values.length, initialIndex: 1, vsync: this);
+    basic = Basic(birthDay: widget.birthDay);
     minPan = MinPan(birthDay: widget.birthDay);
     super.initState();
   }
@@ -40,7 +44,7 @@ class _ResultScreenState extends State<ResultScreen>
                 .toList()),
       ),
       body: TabBarView(controller: _tabController, children: [
-        Container(),
+        BasicScreen(basic: basic),
         MinPanScreen(minPan: minPan),
         Container(),
         Container(),

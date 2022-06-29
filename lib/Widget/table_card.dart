@@ -81,7 +81,7 @@ class TableCard extends StatelessWidget {
           child: (nRow == 1 && nCol == 1)
               ? Center(
                   child: Text(
-                  title,
+                  title ?? data,
                   style: Theme.of(context)
                       .textTheme
                       .subtitle2!
@@ -122,17 +122,41 @@ class TableCard extends StatelessWidget {
                     )
                   : (nRow > 1 && nCol == 1)
                       ? Column(
-                          children: (title as List<List>)
-                              .map((t) => Expanded(
+                          children: title != null
+                              ? (title as List<List>)
+                                  .map(
+                                    (t) => Expanded(
                                       child: Center(
+                                        child: FittedBox(
                                           child: Text(
-                                    t[0],
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .subtitle2!
-                                        .copyWith(color: Colors.black54),
-                                  ))))
-                              .toList(),
+                                            t[0],
+                                            textAlign: TextAlign.center,
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .subtitle2!
+                                                .copyWith(
+                                                    color: Colors.black54),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                  .toList()
+                              : (data as List<List>)
+                                  .map(
+                                    (d) => Expanded(
+                                      child: Center(
+                                        child: Text(
+                                          d[0],
+                                          textAlign: TextAlign.center,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .subtitle2,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                  .toList(),
                         )
                       : Column(
                           children: (data as List<List>)

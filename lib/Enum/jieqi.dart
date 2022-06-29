@@ -77,4 +77,59 @@ enum JieQi {
         return '大寒';
     }
   }
+
+  factory JieQi.toJieQi(String value) {
+    switch (value) {
+      case '冬至':
+        return JieQi.dongzhi;
+      case '小寒':
+        return JieQi.xiaohan;
+      case '大寒':
+        return JieQi.dahan;
+      case '立春':
+        return JieQi.lichun;
+      case '雨水':
+        return JieQi.yushui;
+      case '惊蛰':
+        return JieQi.jingzhe;
+      case '春分':
+        return JieQi.chunfen;
+      case '清明':
+        return JieQi.qingming;
+      case '谷雨':
+        return JieQi.guyu;
+      case '立夏':
+        return JieQi.lixia;
+      case '小满':
+        return JieQi.xiaoman;
+      case '芒种':
+        return JieQi.mangzhong;
+      case '夏至':
+        return JieQi.xiazhi;
+      case '小暑':
+        return JieQi.xiaoshu;
+      case '大暑':
+        return JieQi.dashu;
+      case '立秋':
+        return JieQi.liqiu;
+      case '处暑':
+        return JieQi.chushu;
+      case '白露':
+        return JieQi.bailu;
+      case '秋分':
+        return JieQi.qiufen;
+      case '寒露':
+        return JieQi.hanlu;
+      case '霜降':
+        return JieQi.shuangjiang;
+      case '立冬':
+        return JieQi.lidong;
+      case '小雪':
+        return JieQi.xiaoxue;
+      case '大雪':
+        return JieQi.daxue;
+      default:
+        return JieQi.dongzhi;
+    }
+  }
 }
